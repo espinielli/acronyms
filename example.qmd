@@ -1,0 +1,67 @@
+---
+title: "Acronyms Example"
+format: html
+filters:
+  - acronyms
+acronyms:
+  loa_title: "Glossary"
+  insert_loa: "end"
+  sorting: alphabetical
+  keys:
+    - shortname: UN
+      longname: United Nations
+  # Warning! The following path must be either absolute or relative to the 
+  # current working directory! 
+  # (You can have multiple acronym files)
+  fromfile: 
+    - _extensions/acronyms/acronyms.yml
+---
+
+# Introduction {#intro}
+
+In this example we mix inline and file-based definition of acronyms, just to
+show that you can mix the two ways if you wish.
+
+The inline definition is in the YML of this Quarto file:
+
+```yml
+acronyms:
+  loa_title: "Glossary"
+  insert_loa: "end"
+  sorting: alphabetical
+  keys:
+    - shortname: UN
+      longname: United Nations
+  # Warning! The following path must be either absolute or relative to the 
+  # current working directory! 
+  # (You can have multiple acronym files)
+  fromfile: 
+    - _extensions/acronyms/acronyms.yml
+```
+
+while the other is defined in the `acronyms.yml` as:
+
+```yml
+---
+acronyms:
+  keys:
+    - shortname: RL
+      longname: Reinforcement Learning
+---
+```
+
+
+## Usage
+
+This paragraph mentions \acr{RL} and \acr{UN} for the first time.
+
+Now, in this paragraph, \acr{RL} is in short form.
+And so it is the case for \acr{UN} for that matter.
+
+## Options
+
+All the options are explained in the [the relevant `{acronymsdown}` vignette](https://rchaput.github.io/acronymsdown/articles/options.html).
+
+
+
+
