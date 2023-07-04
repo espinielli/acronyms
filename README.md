@@ -1,3 +1,5 @@
+**[Remy Chaput](https://github.com/rchaput) Created a [repo for acronym support in Quarto](rchaput/acronyms), so I have archived this one.**
+
 # Acronyms Extension For Quarto
 
 This is just about putting together in a compliant Quarto extension
